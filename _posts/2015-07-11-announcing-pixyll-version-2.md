@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      Announcing Version 2.0
-date:       2015-07-11
-summary:    Now, Pixyll is lighter weight and more customizable than before.
+title:      Vamos que nos vamos
+date:       2017-02-08
+summary:    Tengo un blog con Jekyll alojado en github pages, ¿cómo te quedas?
 categories: jekyll pixyll
 ---
 
