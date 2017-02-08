@@ -33,6 +33,6 @@ Jekyll has a bunch of [community free themes](https://github.com/jekyll/jekyll/w
 
 This post is not about telling you how to use Jekyll, as there are awesome tutorials out there like [this](https://jekyllrb.com/docs/quickstart/) or [this](http://jmcglone.com/guides/github-pages/). [`Readme.md` files on themes](https://github.com/johnotander/pixyll) repos are also a good source of information.
 
-Hope you find this usefull.
+Hope you find this useful.
 
 Cheers
