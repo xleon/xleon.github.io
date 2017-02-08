@@ -2,9 +2,9 @@
 title:       Spaghetti code
 email:       malandro@gmailcom
 author:      Diego Ponce de León
-description: "Stuff about software, mobile apps, .net, xamarin and who knows"
+description: "Software development stuff"
 baseurl:     ""
-url:         "http://xleon.github.io"
+url:         "http://xleon.net"
 date_format: "%b %-d, %Y"
 
 # Google services
