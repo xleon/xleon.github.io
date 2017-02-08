@@ -1,20 +1,19 @@
 ---
 layout: page
-title: About Pixyll
+title: About
 permalink: /about/
 tags: about
 ---
+I make software.  
+I usually love it.  
+Sometimes it´s too hard, but  
+I just can´t stop it, so  
+I make software
 
-This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
-([@4lpine](https://twitter.com/4lpine)).
+<blockquote>
+  <p>
+    Spaghetti code is a pejorative phrase for source code using "unstructured" branching constructs. It is named such because program flow is conceptually like a bowl of spaghetti, i.e. twisted and tangled.
+  </p>
+  <footer><cite title="Wikipedia">Wikipedia</cite></footer>
+</blockquote>
 
-Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it,
-request a feature, report a bug, or contribute. It's free, and open source
-([MIT](http://opensource.org/licenses/MIT)).
-
-Thanks to the following:
-
-* [BASSCSS](http://basscss.com)
-* [Jekyll](http://jekyllrb.com)
-* [Refills](http://refills.bourbon.io/)
-* [Type Scale](http://type-scale.com/)
