@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      A simplistic way of localizing your apps
+title:      A simplistic way of localizing your .NET and Xamarin apps
 date:       2017-02-09
 summary:    And sharing your locale files across platforms
 categories: xamarin dotnet
@@ -33,13 +33,13 @@ I love simplicity and that´s why I created a lightweight utility for this matte
 - Simpler locale files (similar to java .properties format)
 - Straightforward setup and initialization
 
-__Install__
+### Install
 
 I18N-Portable is [nuget package](https://www.nuget.org/packages/I18NPortable/)
 
-__Locales__
+### Locales
 
-A locale is just a [locale].txt file with `key=value` pairs. You place these files on a PCL project once. They will be shared accross platforms:
+A locale is just a [locale].txt file with `key=value` pairs. You place these files on a PCL project once, under a directory called "Locales". They will be shared accross platforms:
 
     # this is a comment
     key1 = one
@@ -47,7 +47,7 @@ A locale is just a [locale].txt file with `key=value` pairs. You place these fil
     key3 = translation with \nmultiple \nlines
 
 
-__Setup__
+### Setup
 
 {% highlight csharp %}
 I18N.Current
@@ -61,15 +61,15 @@ _You put this line at your PCL code, normally in any method executed during app 
 
 What did just happen?
 
-The library figures out the current system culture and and tries to load a matching locale. If you didn´t provide a locale for the current culture, it will fallback to english ("en.txt"). From now on you can get any translation with a string method extension:
+The `Init()` method tells I18N-Portable which assembly is hosting the locales. Now the library figures out the current system culture and tries to load a matching locale. If you didn´t provide a locale for the current culture, it will fallback to english ("en.txt"). 
+
+From now on you can get any translation with a string method extension from anywhere in your app PCL and/or platform projects:
 
 {% highlight csharp %}
 var translation = "key1".Translate(); // one
 {% endhighlight %}
 
-You can make this call from anywhere in your app PCL and platform projects.
-
-__Can I use this with my awesome Mvvm framework?__
+### Can I use this with my awesome Mvvm framework?
 
 Sure. You can bind any text view to a particular key, from XAML (Xamarin.Forms, UWP, etc) and classic Android/iOS if your Mvvm framework implements bindings:
 
@@ -97,13 +97,13 @@ iOS with MvvmCross:
 bindingSet.Bind(view).To("[key]");
 {% endhighlight %} 
 
-To make this work, a one liner is needed in your ViewModel (I usually do this in a BaseViewModel once):
+To make this work, a simple indexer is needed in your ViewModel (I usually do this in a BaseViewModel once):
 
 {% highlight csharp %}
 public string this[string key] => key.Translate();
 {% endhighlight %} 
 
-__Can I auto bind Android xml views or iOS xib/storyboard views without Mvvm or manual setup?__
+### Can I auto bind Android xml views or iOS xib/storyboard views without Mvvm or manual setup?
 
 You will. This is in the works at the moment.
 

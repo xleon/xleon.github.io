@@ -14,7 +14,7 @@ All of them provide a nice content management web interface to edit your stuff. 
 
 I´m really tired of managing servers, hostings accounts and payments, even ftp deployment (is anyone still doing this?), installing content management systems and spening too much of my time on it. That´s fine for client work, but I wanted something easier for myself this time. 
 
-**I found Jekyll**
+## I found Jekyll
 
 [Jekyll](https://jekyllrb.com/) is a static site generator based on templates that you run on your own computer. You just need to create and edit markdown files. One file for each page or blog post. That´s all. Simple and awesome.
 
@@ -31,7 +31,7 @@ Well, turns out that the underlaying tech on [Github Pages](https://pages.github
 
 Jekyll has a bunch of [community free themes](https://github.com/jekyll/jekyll/wiki/Themes) that you can easily install, normally forking its github repo and then setting up your own preferences on the `_config.yml` file.
 
-This post is not about telling you how to use Jekyll, as there are awesome tutorials out there like [this](https://jekyllrb.com/docs/quickstart/) or [this](http://jmcglone.com/guides/github-pages/). [`Readme.md` files on themes](https://github.com/johnotander/pixyll) repos are also a good source of information.
+This post is not about telling you how to use Jekyll, as there are awesome tutorials out there like [this one](https://jekyllrb.com/docs/quickstart/) or [this one](http://jmcglone.com/guides/github-pages/). [Readme files on theme](https://github.com/johnotander/pixyll) repos are also a good source of information.
 
 Hope you find this useful.
 
