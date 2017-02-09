@@ -3,7 +3,7 @@ layout:     post
 title:      A simplistic way of localizing your apps
 date:       2017-02-09
 summary:    And sharing your locale files across platforms
-categories: xamarin, dotnet
+categories: xamarin dotnet
 ---
 
 Sooner or later we all need to localize an app in multiple languages. Each platform provides its own way of localizing strings and you may wonder how to share locale files between them. 
