@@ -103,7 +103,7 @@ To make this work, a one liner is needed in your ViewModel (I usually do this in
 public string this[string key] => key.Translate();
 {% endhighlight %} 
 
-__Can I bind Android xml views or iOS xib/storyboard views without Mvvm?__
+__Can I auto bind Android xml views or iOS xib/storyboard views without Mvvm or manual setup?__
 
 You will. This is in the works at the moment.
 
