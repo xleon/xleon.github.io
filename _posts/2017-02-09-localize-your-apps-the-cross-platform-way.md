@@ -35,7 +35,7 @@ I love simplicity and that´s why I created a lightweight utility for this matte
 
 ### Install
 
-I18N-Portable is [nuget package](https://www.nuget.org/packages/I18NPortable/)
+I18N-Portable is a [nuget package](https://www.nuget.org/packages/I18NPortable/)
 
 ### Locales
 
