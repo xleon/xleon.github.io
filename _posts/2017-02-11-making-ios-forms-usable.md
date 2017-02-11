@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Making iOS forms usable
-date:       2017-02-10
+date:       2017-02-11
 summary:    Prevent user frustration by implementing good practices
 categories: xamarin ios usability xcode fluentlayout
 ---

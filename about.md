@@ -17,3 +17,4 @@ I make software
   <footer><cite title="Wikipedia">Wikipedia</cite></footer>
 </blockquote>
 
+Click any of the social icons to get in touch
