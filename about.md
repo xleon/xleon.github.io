@@ -17,4 +17,6 @@ I make software
   <footer><cite title="Wikipedia">Wikipedia</cite></footer>
 </blockquote>
 
+Posts about iOS/Android will probably be based on Xamarin. If you are looking for swift/java info this is not your site.
+
 Click any of the social icons to get in touch
