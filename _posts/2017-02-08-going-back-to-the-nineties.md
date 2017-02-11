@@ -5,7 +5,7 @@ date:       2017-02-08
 summary:    Or how to make a blog without a database
 categories: jekyll
 ---
-I´m a developer and I´ve always wanted to have my own blog. I like the idea of helping others by telling them how to make things easier. So here I am, building a new blog for the fifth time in my life. 
+I´m a developer and I´ve always wanted to have my own blog. I like the idea of helping others by telling them how to make things easier. So here I am, building a new blog for the fifth time in my life.  
 
 In the past I built my site with [Wordpress](https://wordpress.com/) (php), [Umbraco](https://umbraco.com/) (.NET), [Django](https://www.djangoproject.com/) (python) and finally with [Tumblr](https://www.tumblr.com).
 All of them except Tumblr required a hosting provider, manual setup and a monthly fee. Tumblr is nice and easy, but [my contents didn´t appear on google search](https://www.distilled.net/blog/seo/seo-for-tumblr-blogs/), possibly due to my ignorance or maybe it´s just Tumblr, who knows...

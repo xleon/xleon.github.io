@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      A simplistic way of localizing your .NET and Xamarin apps
+title:      Easy and cross-platform localization (Xamarin & .NET)
 date:       2017-02-09
-summary:    And sharing your locale files across platforms
-categories: xamarin dotnet
+summary:    Share locales from a PCL. Get up and running in no time
+categories: xamarin dotnet localization i18n
 ---
 
 Sooner or later we all need to localize an app in multiple languages. Each platform provides its own way of localizing strings and you may wonder how to share locale files between them. 
@@ -21,7 +21,7 @@ At least at the time of this writting Xamarin does not provide a Resx editor. Be
 
 The problem is:
 
-- I don´t want to repeat all that process in every project, or even copy-paste accross projects and platforms.
+- I don´t want to repeat all that process in every project, or even copy-paste across projects and platforms.
 - I just want a library to do it for me
 - I don´t like/want Resx files and I don´t want to have a client editing them
 
@@ -39,7 +39,7 @@ I18N-Portable is a [nuget package](https://www.nuget.org/packages/I18NPortable/)
 
 ### Locales
 
-A locale is just a [locale].txt file with `key=value` pairs. You place these files on a PCL project once, under a directory called "Locales". They will be shared accross platforms:
+A locale is just a [locale].txt file with `key=value` pairs. You place these files on a PCL project once, under a directory called "Locales". They will be shared across platforms:
 
     # this is a comment
     key1 = one
@@ -74,25 +74,21 @@ var translation = "key1".Translate(); // one
 Sure. You can bind any text view to a particular key, from XAML (Xamarin.Forms, UWP, etc) and classic Android/iOS if your Mvvm framework implements bindings:
 
 XAML:
-
 {% highlight xml %}
 <Button Content="{Binding [key]}" />
 {% endhighlight %}
 
 Xamarin.Forms XAML:
-
 {% highlight xml %}
 <Button Text="{Binding [key]}" />
 {% endhighlight %} 
 
 Android with MvvmCross:
-
 {% highlight xml %}
 <TextView local:MvxBind="Text [key]" />
 {% endhighlight %} 
 
 iOS with MvvmCross:
-
 {% highlight csharp %}
 bindingSet.Bind(view).To("[key]");
 {% endhighlight %} 
@@ -103,10 +99,6 @@ To make this work, a simple indexer is needed in your ViewModel (I usually do th
 public string this[string key] => key.Translate();
 {% endhighlight %} 
 
-### Can I auto bind Android xml views or iOS xib/storyboard views without Mvvm or manual setup?
-
-You will. This is in the works at the moment.
-
-A lot more handy stuff is available. You can see all the details in the [github repo](https://github.com/xleon/I18N-Portable)
+More handy stuff and details are available at the [github repo](https://github.com/xleon/I18N-Portable)
 
 Cheers!
