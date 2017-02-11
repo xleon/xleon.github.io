@@ -1,1 +1,8 @@
-test
+---
+layout:     post
+title:      Fluent sliders
+date:       2017-02-12
+summary:    Use FluentLayout library to create sliders with Xamarin.iOS
+categories: xamarin ios fluentlayout
+---
+Test
