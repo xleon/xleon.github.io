@@ -114,5 +114,6 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+  - jekyll-sitemap
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]
