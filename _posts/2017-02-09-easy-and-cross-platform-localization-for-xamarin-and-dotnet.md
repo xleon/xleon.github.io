@@ -3,7 +3,7 @@ layout:     post
 title:      Easy and cross-platform localization (Xamarin & .NET)
 date:       2017-02-09
 summary:    Share locales from a PCL. Get up and running in no time
-categories: xamarin dotnet localization i18n
+categories: localization xamarin pcl share-locales i18n  portable  dotnet 
 ---
 
 Sooner or later we all need to localize an app in multiple languages. Each platform provides its own way of localizing strings and you may wonder how to share locale files between them. 

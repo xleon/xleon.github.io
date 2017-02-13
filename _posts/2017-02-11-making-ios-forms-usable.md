@@ -3,7 +3,7 @@ layout:     post
 title:      Making iOS forms usable
 date:       2017-02-11
 summary:    Prevent user frustration by implementing good practices with Xamarin.iOS
-categories: xamarin ios usability xcode fluentlayout
+categories: xamarin ios form auto-scroll hide-keyboard usability xcode fluentlayout
 ---
 
 ### Scenario:  
