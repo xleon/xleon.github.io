@@ -9,4 +9,4 @@ Mostly interested in development with Xamarin, .NET tools and API´s. But I also
 
 Posts about iOS/Android will probably be based on Xamarin. If you are looking for swift/java info this is not your site.
 
-Click on any of the icons to get in touch
+Click on any of the icons to know more.
