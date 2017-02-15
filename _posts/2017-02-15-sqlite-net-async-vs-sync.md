@@ -52,7 +52,7 @@ I´ve never had a single issue when creating the connection that way.
 I´m pretty sure that if you [measure the time](https://github.com/Fody/MethodTimer) it takes for the most of your queries to run, you´ll realize they are surprisingly fast. Fast enough so that the user won´t notice a delay. Go ahead and try it.
 
 ## What happens with blocking, time consuming queries?
-In those cases you can just make the async wrapper yourself. Your code will be easier to understand. From the point of view of another developer working with your code, it will be easier to know which queries are fast (sync) and which are not (async). 
+In those cases you can just make the async wrapper yourself. Your code will provide more information: from the point of view of another developer working with your code, it will be easier to know which queries are fast (sync) and which are not (async). 
 
 ## About "async void" in view initialization
 Taking up the case where your view needs to load data on initialization, some people recommends doing things like:
