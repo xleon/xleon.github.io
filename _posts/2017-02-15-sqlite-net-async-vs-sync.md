@@ -77,6 +77,11 @@ protected async override void OnCreate(Bundle bundle)
 
 That could work, but here´s the downside: "async void" won´t let you catch Exceptions. `_service.GiveMeData()` could fail and it will be silently, making it harder to debug. A `try/catch` statement won´t help neither. Don´t believe me? just [watch](https://msdn.microsoft.com/en-us/magazine/jj991977.aspx).
 
+<div style="text-align:center">
+    <img src="/images/3rgXBIlyqaow1elbnG.gif" alt="just watch">
+</div>  
+<br> 
+
 That won´t happen if you create a new `Task`:
 
 {% highlight csharp %}
