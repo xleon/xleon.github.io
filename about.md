@@ -4,9 +4,13 @@ title: About
 permalink: /about/
 tags: about
 ---
-Just another dev trying to write about useful stuff.  
-Mostly interested in development with Xamarin, .NET tools and API´s. But I also enjoy python, UI-UX, usability and trying new toys. 
+I love open source and the community that supports it. I could not have gotten where I am now without it. This blog is an attempt to return the favor.
+  
+Mostly interested in mobile development with Xamarin and REST services with .NET apis. I also enjoy python, UI design/usability and making things look and move smoothly. 
 
-Posts about iOS/Android will probably be based on Xamarin. If you are looking for swift/java info this is not your site.
+Posts about iOS/Android will probably be based on Xamarin.
 
 Click on any of the icons to know more.
+
+[<img src="/images/about/planetxamarin.png" alt="Xamarin Planet" width="280">](https://www.planetxamarin.com/)
+

@@ -9,15 +9,15 @@ categories: xamarin ios form auto-scroll hide-keyboard usability xcode fluentlay
 ### Scenario:  
 Have you been through that moment when you click a form textfield and the soft keyboard shows up overlaying the textfield and you can´t see what you are writing?
 
-Some other issues:  
+Let´s make it worse:  
 
-- No way to hide the keyboard.
-- The "next" or "intro" key of the keyboard does nothing 
+- No way to hide the keyboard (How can I tap the damn button below?).
+- The "next" or "intro" keys of the keyboard do  exactly nothing.
   
-These problems and others we will see later may end up with your users leaving the app and never coming back.
+These problems and others may end up with your users leaving the app and never coming back.
 
 ### Did you let that happen?
-I´m pretty sure you won´t let that happen if you are a [decent developer](https://www.linkedin.com/in/decentdeveloper) :flushed:, but I´ve seen this in more than a few apps (_Apple reviewer may be drunk at the time_) and I want to stop it now :loudspeaker:.
+I´m pretty sure you won´t let that happen if you are a [decent developer](https://www.linkedin.com/in/decentdeveloper) :flushed:, but I´ve seen this in more than a few apps (_Apple reviewer may be drunk at the time_) and I want to stop it now :musical_note:.
 
 <div class="iframe_container">
     <iframe src="https://www.youtube.com/embed/U9t-slLl30E" frameborder="0" allowfullscreen> </iframe> 
