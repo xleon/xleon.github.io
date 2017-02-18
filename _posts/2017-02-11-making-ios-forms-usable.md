@@ -265,7 +265,7 @@ for (var i = 1; i <= count; i++)
 
 Subscribe to the `ShouldReturn` delegate on every `UITextField`:
 {% highlight csharp %}
-textField.ShouldReturn += ShouldReturn;
+textField.ShouldReturn = ShouldReturn;
 {% endhighlight %}
 
 Now we need to change the focus to the next control when "Next" key is pressed and hide the keyboard when "Done" key is pressed on the last `UITextField`. Additionally, the "Done" key may invoke the `Save()` method if you like: 
