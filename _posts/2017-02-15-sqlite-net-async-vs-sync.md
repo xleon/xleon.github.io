@@ -54,62 +54,6 @@ I´m pretty sure that if you [measure the time](https://github.com/Fody/MethodTi
 ## What happens with blocking, time consuming queries?
 In those cases you can just make the async wrapper yourself. Your code will provide more information: from the point of view of another developer working with your code, it will be easier to know which queries are fast (sync) and which are not (async). 
 
-## About "async void" in view initialization
-Taking up the case where your view needs to load data on initialization, some people recommends doing things like:
-
-{% highlight csharp %}
-// iOS 
-public override async void ViewDidLoad()
-{
-    base.ViewDidLoad();
-    var data = await _service.GiveMeData();
-    // so something with the data like setting a TableView Source
-}
-
-// Android
-protected async override void OnCreate(Bundle bundle)
-{
-    base.OnCreate(bundle);
-    var data = await _service.GiveMeData();
-    // so something with the data like setting a ListView adapter
-}
-{% endhighlight %}
-
-That could work, but here´s the downside: "async void" won´t let you catch Exceptions. `_service.GiveMeData()` could fail and it will be silently, making it harder to debug. A `try/catch` statement won´t help neither. Don´t believe me? just [watch](https://msdn.microsoft.com/en-us/magazine/jj991977.aspx).
-
-<div style="text-align:center">
-    <img src="/images/3rgXBIlyqaow1elbnG.gif" alt="just watch">
-</div>  
-<br> 
-
-That won´t happen if you create a new `Task`:
-
-{% highlight csharp %}
-public override void ViewDidLoad()
-{
-    base.ViewDidLoad();
-
-    // setup all the view elements here
-
-    Task.Run(async () =>
-    {
-        try
-        {
-            var data = await _service.GiveMeData();
-
-            InvokeOnMainThread(() =>
-            {
-                _tableView.Source = ...; // do something with the results
-                _tableView.ReloadData();
-            });
-         }
-         catch(Exception ex) 
-         { 
-             // this will work!
-         }
-    });
-}
-{% endhighlight %}
 ## Conclusion
  <blockquote>
   <p>
