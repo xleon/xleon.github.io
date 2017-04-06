@@ -3,7 +3,7 @@ layout:     post
 title:      UWP mobile side loading
 date:       2017-04-06
 summary:    The key details
-categories: uwp mobile side-loading
+categories: uwp mobile side-loading xamarin
 ---
 Installing universal Windows apps outside of the store is a bit different than iOS or Android. [HockeyApp documentation](https://support.hockeyapp.net/kb/client-integration-windows-and-windows-phone/how-to-sideload-uwp-applications) explains how to do it but they are missing some important (and perhaps frustrating) details that I will explain below.
 
