@@ -52,7 +52,7 @@ To see better crash information and stack traces, right after the previous step,
 
 ## Device setup
 
-To install any app compiled with a test certificate or coming from an untrusted source (like HockeyApp), the user needs to enable Windows developer mode on the device:
+To install any app compiled with a test certificate or coming from an untrusted source (like HockeyApp), the user needs to enable Windows developer mode on the device. Go to settings > Update & Security > For developers and select "Developer mode":
 
 <div style="text-align:center">
     <img src="/images/dev-mode.png" alt="windows developer mode">
