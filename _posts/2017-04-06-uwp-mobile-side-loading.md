@@ -43,7 +43,7 @@ Why on earth would you want to make things harder with a zip file and why is it 
 
 ## Upload symbols to HockeyApp
 
-To see better crash information and stack traces, right after the previous step, drag the _.appxsym_ file to the HockeyApp page. Then, go to _ProjectFolder/bin/ARM_, zip the file _YourAppName.pdb_ and drag it to the same page. There is also a button to "Upload build or sym" and another to "Upload zipped .pdb":
+To see better crash information and stack traces, right after the previous step, drag the _.appxsym_ file to the HockeyApp page. Then, go to _ProjectFolder/bin/ARM_, zip the file _YourAppName.pdb_ and drag _YourAppName.zip_ to the same page. There is also a button to "Upload build or sym" and another to "Upload zipped .pdb":
 
 <div style="text-align:center">
     <img src="/images/symbols.png" alt="upload symbols to hockeyapp">
