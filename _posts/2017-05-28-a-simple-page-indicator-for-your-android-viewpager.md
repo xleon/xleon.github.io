@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      A simple page-indicator for your android view-pager
-summary:    It only takes a little xml and five minutes of your time
+summary:    A bit of xml and C#. No 3rd party libs required
 categories: xamarin android
 permalink: /:categories/:title.html
 ---

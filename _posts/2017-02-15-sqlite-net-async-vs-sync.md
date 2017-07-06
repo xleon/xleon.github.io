@@ -2,10 +2,10 @@
 layout:     post
 title:      SQLite.NET > async VS sync
 date:       2017-02-15
-summary:    Or how we love to complicate things
+summary:    Or how we (developers) love to complicate our code base
 categories: xamarin dotnet sqlite-net async
 ---
-Many developers are happy using [TPL](https://www.codeproject.com/Articles/152765/Task-Parallel-Library-of-n) (Task Parallel Library) with [SQLite.Net](https://github.com/praeclarum/sqlite-net). It´s not hard to find blog posts, StackOverflow answers and other sites recommending it. The library offers an async connection that can be handy to avoid blocking the UI thread and that´s how I implemented SQLite.Net from the day one.
+Many developers are happy using [TPL](https://www.codeproject.com/Articles/152765/Task-Parallel-Library-of-n) (Task Parallel Library) with [SQLite.Net](https://github.com/praeclarum/sqlite-net). It´s not hard to find blog posts, StackOverflow answers and other sites recommending it. The library offers an async connection that can be handy to avoid blocking the UI thread and that´s how [I implemented SQLite.Net from the day one](https://stackoverflow.com/questions/29050400/generic-repository-for-sqlite-net-in-xamarin-project/29856945#29856945).
 
 The reason to use [SQLiteAsyncConnection](https://github.com/praeclarum/sqlite-net/blob/master/src/SQLiteAsync.cs#L45) is pretty simple: I want my app to stay responsive when querying the database. Big queries take time. If the connection is synchronous my app may become unresponsive for a while until the data is retrieved. We care about users and C# async/await is relatively easy, so let´s use it everywhere!, right? 
 
@@ -49,10 +49,10 @@ Connection = new SQLiteConnection(path, SQLiteOpenFlags.ReadWrite
 I´ve never had a single issue when creating the connection that way.
 
 ## How many of your queries really take so long to be async?
-I´m pretty sure that if you [measure the time](https://github.com/Fody/MethodTimer) it takes for the most of your queries to run, you´ll realize they are surprisingly fast. Fast enough so that the user won´t notice a delay. Go ahead and try it.
+I´m pretty sure that if you [measure the time](https://github.com/Fody/MethodTimer) it takes for the most of your queries to run, you´ll realize they are surprisingly fast. Fast enough so that the user won´t notice a delay, therefore async here is useless. Go ahead and try it.
 
 ## What happens with blocking, time consuming queries?
-In those cases you can just make the async wrapper yourself. Your code will provide more information: from the point of view of another developer working with your code, it will be easier to know which queries are fast (sync) and which are not (async). 
+In those cases you can/should just make the async wrapper yourself. Besides, your code will provide more information: other developers working with your code will easily figure out which queries are fast enough (sync) and which are not (async). 
 
 ## Conclusion
  <blockquote>

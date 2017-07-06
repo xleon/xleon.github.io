@@ -2,7 +2,7 @@
 layout:     post
 title:      Large file downloads on Windows 10 mobile
 date:       2017-04-07
-summary:    With progress feedback
+summary:    Download safely in the background with progress feedback
 categories: uwp windows download large-file xamarin
 ---
 To download big files correctly (especially on mobile devices) we should try to achieve the following goals:
