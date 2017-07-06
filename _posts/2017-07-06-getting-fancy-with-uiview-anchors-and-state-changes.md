@@ -1,6 +1,7 @@
 ---
 layout:     post
 title:      Getting fancy with UIView anchors and state changes
+date:       2017-07-06T23:20:00Z
 summary:    
 categories: xamarin ios NSLayoutConstraint autolayout
 permalink: /:categories/:title.html
