@@ -115,7 +115,7 @@ public static NSLayoutConstraint[] ConstraintSize(this UIView origin,
 view.ConstraintSize(100, 100);
 {% endhighlight %}
 
-Consider playing with all anchors and `ConstraintTo...()` methods. You can do literally anything.
+Consider playing around with all anchors and `Constraint...To()` methods. You can make literally anything.
 
 Those method extensions above return an array of constraints so we can deactivate/activate them later. Consider a set of constraints like a visual state we can store in a variable:
 
@@ -124,7 +124,7 @@ var small = view.ConstraintSize(100, 80);
 var big = view.ConstraintSize(200, 200, false);
 {% endhighlight %}
 
-States can get even more complex by chaining the constraints of multiple objects:
+States can get even more complex by chaining the constraints from multiple objects:
 
 {% highlight csharp %}
 var small = view1.ConstraintSize(100, 100)
