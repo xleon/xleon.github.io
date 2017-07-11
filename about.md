@@ -11,7 +11,7 @@ I´m also a bit of a design & usability fanatic.
 
 You can find me on [StackOverflow](https://stackoverflow.com/users/1850606/xleon), [GitHub](https://github.com/xleon/), [Linkedin](https://www.linkedin.com/in/diegoponcedeleon/) and [Twitter](https://twitter.com/diegoxleon).
 
-I do freelance work and have experience collaborating with teams remotely. If you want to hire me, drop me an [email](mailto:malandro@gmailcom) or add me to [skype](skype:diegoxleon?userinfo).
+If you want to say hello, drop me an [email](mailto:malandro@gmailcom) or add me to [skype](skype:diegoxleon?userinfo).
 
 > Posts about iOS/Android will probably be based on Xamarin.
 
