@@ -1,7 +1,7 @@
 ---
 layout:     post
 date:       2017-07-11T19:44:00Z
-title:      UIStackView "magic"
+title:      UIStackView magic
 summary:    When Apple realized a LinearLayout could be useful for developers...
 categories: xamarin ios
 permalink: /:categories/:title.html
