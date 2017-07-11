@@ -371,7 +371,7 @@ UIView.Animate(0.3, () =>
 </div>  
 <br> 
 
-Enough of for now, you can find these and other samples in the [github repo](https://github.com/xleon/UIStackViewPlayground).  
+Enough for now, you can find these and other samples in the [github repo](https://github.com/xleon/UIStackViewPlayground).  
 Here it´s a screen recording with the rest of them:
 
 <div style="text-align:center">
