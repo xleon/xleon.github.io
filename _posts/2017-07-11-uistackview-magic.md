@@ -242,7 +242,7 @@ private static UIButton GetAutoDestroyButton()
 
 ## Accordion component POC
 
-In a real application I will probably use a `UITableView` to create an accordion component because it will handle items and scroll more efficiently using cell virtualization. However this can be done faster with a `UIStackView` and it works pretty decently for a few views:
+In a real application I would probably use a `UITableView` to create an accordion component because it will handle items and scroll more efficiently using cell virtualization. However this can be done faster with a `UIStackView` and it works pretty decently for a few views:
 
 <div style="text-align:center">
     <img src="/images/screen-recordings/accordion.gif" alt="Add remove elements on UIStackViews">
