@@ -251,6 +251,8 @@ In a real application I will probably use a `UITableView` to create an accordion
 
 In this sample, only a single item can be opened at a time. The content view is actually a resized `UILabel` with a random height, but it could be anything else.
 
+It´s working saying that content views in this sample are all added on initialization and later hidden and shown. This means that `UIStackView` is __smart enough__ to handle constraint changes not only when views are added or removed, but also __when their visibility changes__ (`Hidden = true|false`), simplifying your code even more.
+
 {% highlight csharp %}
 private static readonly Random Random 
     = new Random(DateTime.Now.Millisecond);
