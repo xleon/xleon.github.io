@@ -120,9 +120,9 @@ public override void ViewDidLoad()
     // Layout Views
 
     // For AutoLayout to work, all views and nested views need to set 
-    // "TranslatesAutoresizingMaskIntoConstraints" property to true. 
+    // "TranslatesAutoresizingMaskIntoConstraints" property to `false`. 
     // It´s easy to forget it so I created an extension method that 
-    // will set it to the view and its subviews
+    // will do this to the view and its subviews
     scroll.EnableAutoLayout();
 
     // "FullSizeOf" is a method extension to set leading, trailing, 
