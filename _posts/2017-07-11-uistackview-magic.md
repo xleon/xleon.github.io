@@ -45,9 +45,9 @@ Going back to the previous example, if view1, view2 and view3 were within a `UIV
 
 To recap:
 
-1. Design time layouts becomes easier
-2. Coded layouts becomes easier
-3. Runtime state changes (adding or removing elements) takes a single line of code.
+1. Design time layouts become easier
+2. Coded layouts become easier
+3. Runtime state changes (adding or removing elements) take a single line of code.
 4. Animating layout changes is now very simple
 
 ## Shut up and show me the code
