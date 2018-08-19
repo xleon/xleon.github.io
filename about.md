@@ -15,5 +15,5 @@ If you want to say hello, drop me an [email](mailto:malandro@gmailcom) or add me
 
 > Posts about iOS/Android will probably be based on Xamarin.
 
-[<img src="/images/about/planetxamarin.png" alt="Xamarin Planet" width="280">](https://www.planetxamarin.com/)
+<!--[<img src="/images/about/planetxamarin.png" alt="Xamarin Planet" width="280">](https://www.planetxamarin.com/)-->
 
