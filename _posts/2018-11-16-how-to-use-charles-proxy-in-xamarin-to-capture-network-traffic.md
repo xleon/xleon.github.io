@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      How to use Charles Proxy in Xamarin to capture network traffic (including SSL)
-date:       2018-10-09
+date:       2018-11-16
 categories: xamarin android ssl charles-proxy
 permalink: /:categories/:title.html
 ---
